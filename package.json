@@ -36,6 +36,10 @@
     "vite": "^5.0.12"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snowin-jj/todo-app.git"
+  },
   "author": {
     "name": "snowin-jj",
     "email": "snowin.developer@gmail.com"
