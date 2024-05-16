@@ -1,6 +1,10 @@
 import {app, BrowserWindow} from 'electron';
 import path from 'path';
+import {updateElectronApp} from 'update-electron-app';
+
 import {registerHandlers} from "./ipcHandlers";
+
+updateElectronApp(); // additional configuration options available
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {

@@ -1,8 +1,4 @@
 import Knex from "knex";
-import 'dotenv/config'
-
-const migrationDir = process.env.NODE_ENV === "development" ? "./migrations" : "./resources/migrations";
-const seedDir = process.env.NODE_ENV === "development" ? "./seeds" : "./resources/seeds";
 
 const config = {
     client: 'better-sqlite3',
@@ -10,10 +6,10 @@ const config = {
         filename: './dev.sqlite3'
     },
     migrations: {
-        directory: migrationDir,
+        directory: "resources/migrations",
     },
     seeds: {
-        directory: seedDir,
+        directory: "resources/migrations",
     },
     useNullAsDefault: true
 }

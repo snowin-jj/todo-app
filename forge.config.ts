@@ -6,7 +6,6 @@ import {MakerRpm} from '@electron-forge/maker-rpm';
 import {VitePlugin} from '@electron-forge/plugin-vite';
 import {FusesPlugin} from '@electron-forge/plugin-fuses';
 import {FuseV1Options, FuseVersion} from '@electron/fuses';
-import {execSync} from 'child_process';
 
 
 const config: ForgeConfig = {
@@ -50,6 +49,18 @@ const config: ForgeConfig = {
             [FuseV1Options.OnlyLoadAppFromAsar]: true,
         }),
     ],
+    publishers: [
+        {
+            name: '@electron-forge/publisher-github',
+            config: {
+                repository: {
+                    owner: 'snowin-jj',
+                    name: 'todo-app'
+                },
+                prerelease: true
+            }
+        }
+    ]
 };
 
 export default config;
