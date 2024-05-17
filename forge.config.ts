@@ -57,7 +57,8 @@ const config: ForgeConfig = {
                     owner: 'snowin-jj',
                     name: 'todo-app'
                 },
-                prerelease: true
+                prerelease: false,
+                draft: true
             }
         }
     ]
