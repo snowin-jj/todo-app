@@ -20,10 +20,10 @@ const config = {
         filename: dbPath
     },
     migrations: {
-        directory: "./migrations",
+        directory: "./resources/migrations",
     },
     seeds: {
-        directory: "./migrations",
+        directory: "./resources/migrations",
     },
     useNullAsDefault: true
 }

@@ -1,7 +1,7 @@
 {
   "name": "todo-app",
   "productName": "todo-app",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple Todo App",
   "main": ".vite/build/main.js",
   "scripts": {
