@@ -42,7 +42,7 @@ export default function HomePage() {
             <form className="flex gap-4" onSubmit={handleSubmit}>
                 <input type="text" name="content" className="w-96 border-2 py-2 px-4 rounded-md"
                        placeholder="What's your todo?"/>
-                <button className="bg-lime-400 px-4 py-2 rounded-md">Add</button>
+                <button className="bg-red-400 px-4 py-2 rounded-md">Add</button>
             </form>
             <div className="my-8 w-full flex flex-col gap-4">
                 {todos?.map(todo => (
