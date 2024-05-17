@@ -13,7 +13,6 @@ const ipcHandlers = [
         callback: async (_: IpcMainInvokeEvent, content: string) => {
             try {
                 const todo = await knex('todos').insert({content}, "*")
-                console.log(todo)
                 return JSON.stringify(todo[0]);
             } catch (err) {
                 const e = err as Error;
