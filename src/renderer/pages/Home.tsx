@@ -39,6 +39,7 @@ export default function HomePage() {
 
     return (
         <main className="max-w-xl mx-auto flex flex-col items-center pt-10 min-h-screen">
+            <h2>Todos</h2>
             <form className="flex gap-4" onSubmit={handleSubmit}>
                 <input type="text" name="content" className="w-96 border-2 py-2 px-4 rounded-md"
                        placeholder="What's your todo?"/>
